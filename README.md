@@ -2,7 +2,7 @@
 * es06 study를 위한 레파지토리
 
 ## forEach()
-* 전달받은 함수를 배열의 **각각 원소에 대해** 실행
+* 전달받은 **함수**를 배열의 **각각 원소에 대해** 실행
 ```javascript
 var fruits = ['apple','banana','peach','blue berry'];
 
