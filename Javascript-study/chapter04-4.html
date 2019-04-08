@@ -1,0 +1,14 @@
+<script>
+//  함수 표현식 방식으로 구현한 팩토리얼 함수
+var factorialVar = function factorial(n) {
+    if(n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);    //  내부에서는 접근가능
+};
+
+console.log(factorialVar(3));   //  6
+console.log(factorial(3));  //  Uncaught ReferenceError: factorial is not defined : 외부에서는 호출 불가능
+
+
+</script>
