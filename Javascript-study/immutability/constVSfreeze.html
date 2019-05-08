@@ -1,0 +1,11 @@
+<script>
+//  const : 참조(이름)를 못바꾸게 함
+//  freeze : 값을 못바꾸게 함
+
+const o1 = {name:'kim'}
+Object.freeze(o1)
+const o2 = {name: 'lee'}
+// o1 = o2 //  참조 error
+o1.name = 'park'
+console.log(o1);    //  freeze로 얼렸기 때문에 값 바뀌지 않음
+</script>
