@@ -1,0 +1,9 @@
+<script>
+var o1 = {name: 'kim', score:[1,2]}
+Object.freeze(o1)   //  원본을 바꾸지 못하도록 얼림
+Object.freeze(o1.score) //  참조하고 있는 객체까지 얼려야 바꾸지 못함
+o1.name = 'lee'
+o1.city = 'seoul'
+o1.score.push(3)
+console.log(o1)
+</script>
